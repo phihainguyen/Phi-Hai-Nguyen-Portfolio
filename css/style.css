@@ -1,0 +1,149 @@
+body{
+    padding: 0;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+.contentContainer{
+    font-family: 'Dosis', sans-serif;
+    max-width: 900px;
+    margin:auto;
+}
+/* index page */
+#indexDescription{
+margin-left: auto;
+}
+#myPic{
+    width: auto;
+    margin-right: auto;
+}
+.row{
+    text-align: left;
+}
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+   
+        
+
+    body {
+        box-sizing: border-box;
+        height: auto;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;    
+    }
+}
+  /* #### Mobile Phones Landscape #### */
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+    body {
+        box-sizing: border-box;
+        height: auto;
+
+        background-repeat: no-repeat;
+
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+  }
+  /* #### Mobile Phones Portrait or Landscape #### */
+  @media screen and (max-device-width: 640px){
+    body {
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        height: 700px;
+
+        background-size: cover;
+        background-attachment: fixed;
+    }
+  }
+  /* #### iPhone 4+ Portrait or Landscape #### */
+  @media screen and (min-device-width: 850px){
+    body {
+        box-sizing: border-box;
+        height: 500px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;  
+    }
+    h1{
+        text-align: center;
+    }
+  }
+  /* #### Mobile Phones Landscape #### */
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+    body {
+        box-sizing: border-box;
+        height: 500px;
+
+        background-repeat: no-repeat;
+
+        background-size: cover;
+        background-attachment: fixed;
+    }
+  }
+  /* #### iPhone 5SE Portrait or Landscape #### */
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+    body {
+        box-sizing: border-box;
+        height: 550px;
+
+        background-repeat: no-repeat;
+
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+  }
+  /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+    body {
+        box-sizing: border-box;
+        height: 660px;
+
+        background-repeat: no-repeat;
+
+        background-size: cover;
+    
+    }
+} 
+  /* #### Tablets Portrait or Landscape #### */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    body {
+        box-sizing: border-box;
+        height: auto;
+
+        background-repeat: no-repeat;
+
+        background-size: cover;
+        height: 1300px;
+    
+    }
+}
+
+  /* #### iPhone 4 Portrait or Landscape #### */
+  @media (device-height: 480px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){   
+.row{
+    max-width: 320px;
+    margin: auto;
+}
+img{
+    width: 280px;
+    height: 340px;
+    margin: auto;
+}
+
+
+/* #### iPad mini Portrait or Landscape #### */
+@media (device-height: 1024px) and (device-width: 768px) and (-webkit-min-device-pixel-ratio: 2){   
+    body {
+    box-sizing: border-box;
+    height: auto;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    height: 1024px;
+    }
+}
