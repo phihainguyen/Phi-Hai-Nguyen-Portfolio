@@ -6,67 +6,95 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans+Condensed:300|PT+Sans+Narrow|Quicksand"
+        rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 
-<body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Phi Hai Nguyen</a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">Introduction<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./about.html">About </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-    <div class="contentContainer">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Hello, Welcome to My Official Website</h1>
+<body class="fade" id="indexBody">
+    <script>
+        document.body.className = 'fade';
+    </script>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html" class="link" id="phiHai">Phi Hai Nguyen</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./about.html" class="link">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./portfolio.html" class="link">Portfolio<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" class="link">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="row">
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button id="navButton" class="navbar-toggler hamburger hamburger--elastic" type="button"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box ">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-                <div class="col-sm-12" id="indexDescription">
-                    <p>In this website you will have a tiny glimpse of who Phi Hai Nguyen is as a person and as a Web
-                        Developer. You will be able to view some of the projects that Phi Hai have worked on through his
-                        web developing journey thus far.
-                    </p>
-                </div>
+
+
+        </nav>
+
+            <div id="bg-image"><img src="./images/mac.jpg" alt="image of mac laptop with a tea kettle and coffee cup placed on top of a coffee table" id="macBack"></div>
+
+            <div class="bg-text">
+             
+                <h1 style="font-size:70px">I am Phi Hai Nguyen</h1>
+                <p style="font-size:20px">And I'm a Web Developer</p>
             </div>
 
-        </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+
+
+        <!-- Optional JavaScript -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function (e) {
+                document.body.className = '';
+            });
+        </script>
+      <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+        <script src="javascript/site.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+            <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
