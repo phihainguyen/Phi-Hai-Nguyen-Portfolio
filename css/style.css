@@ -77,7 +77,7 @@ a.link{
     color: black;
 }
 #navButton{
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
   
@@ -212,8 +212,40 @@ button{
       transition-delay: 0.075s; }
 
 /* #### Contact Form ###### */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #5b6862;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #94aaa1;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  #emailAdd{
+      color: #5b6862
+  }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+/* input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
@@ -247,11 +279,11 @@ input::-ms-placeholder, textarea::-ms-placeholder {
 
 input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
   color: #bbb5af;
-}
+} */
 
 /* on hover placeholder */
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+/* input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
@@ -374,7 +406,7 @@ textarea:hover {
 
 #submit:hover {
   color: #e2dedb;
-}
+} */
     
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
@@ -447,7 +479,7 @@ textarea:hover {
             margin: auto;
         }
         #contactHead{
-            text-align: center;
+            text-align: left;
         }
         .contactBut{
             position: absolute;
