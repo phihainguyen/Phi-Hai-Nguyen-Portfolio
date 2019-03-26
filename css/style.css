@@ -64,6 +64,9 @@ body{
 /* index page */
 #indexDescription{
 margin-left: auto;
+font-size: 20px;
+background:black;
+opacity: 0.4;
 }
 #myPic{
     width: auto;
@@ -553,6 +556,7 @@ textarea:hover {
     }
     .navbar{
         width: 100%;
+        position: fixed;
         }
         #name{
             width: 300px;
