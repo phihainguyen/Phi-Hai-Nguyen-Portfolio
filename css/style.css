@@ -65,7 +65,7 @@ body{
 #indexDescription{
 margin-left: auto;
 font-size: 20px;
-background:black;
+background:rgba(148, 141, 141, 0.466);
 opacity: 0.4;
 }
 #myPic{
@@ -647,4 +647,8 @@ width: 100%;
     background-size: cover;
     height: 1024px;
     }
+}
+
+#projectWrap{
+overflow: visible;
 }
