@@ -1,252 +1,280 @@
-body{
-    padding: 0;
-    margin: auto;
-    align-content: center;
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-    overflow: hidden;
+body {
+  padding: 0;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  /* overflow: hidden; */
 
-    opacity: 1;
-    transition: 2.7s opacity;
-  }
-  
-  body.fade {
-      opacity: 0;
-      transition: none;
-  }
-  #indexBody, html {
-    height: 100%;
-    margin: 0;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  #macBack {
-    /* The image used */
-    /* Add the blur effect */
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-  
-    /* Full height */
-    height: 600px; 
-    width: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-  }
+  opacity: 1;
+  transition: 2.7s opacity;
+}
 
-.contentContainer{
-    font-family: 'Dosis', sans-serif;
-    max-width: 900px;
-    margin:auto;
+body.fade {
+  opacity: 0;
+  transition: none;
+}
+#indexBody,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+#projectWrap {
+  overflow: visible;
+}
+
+#macBack {
+  /* The image used */
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  /* Full height */
+  height: 600px;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.contentContainer {
+  font-family: "Dosis", sans-serif;
+  max-width: 900px;
+  margin: auto;
 }
 /* index page */
-#indexDescription{
-margin-left: auto;
-font-size: 20px;
-background:rgba(148, 141, 141, 0.466);
-opacity: 0.4;
+#indexDescription {
+  margin-left: auto;
+  font-size: 20px;
+  background: rgba(148, 141, 141, 0.466);
+  opacity: 0.4;
 }
-#myPic{
-    width: auto;
-    margin-right: auto;
+#myPic {
+  width: auto;
+  margin-right: auto;
 }
-.row{
-    text-align: left;
+.row {
+  text-align: left;
 }
-a.link{
-    font-size: 400px;
-    color: black;
+a.link {
+  font-size: 400px;
+  color: black;
 }
-#navButton{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  
+#navButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
-.navbar{
-    height: 80px;
-    background: white;
+.navbar {
+  height: 80px;
+  background: white;
 }
-.nav-link{
-    text-align: left;
-    font-size: 70px;
-    font-family: 'Dosis', sans-serif;
+.nav-link {
+  text-align: left;
+  font-size: 70px;
+  font-family: "Dosis", sans-serif;
 
-    color: white;
+  color: white;
 }
-.nav-link:hover{
-    color: #b3aca7;
+.nav-link:hover {
+  color: #b3aca7;
 }
-#phiHai{
-    font-size: 30px;
+#phiHai {
+  font-size: 30px;
 }
-.p-4{
-    height: 630px;
+.p-4 {
+  height: 630px;
 }
-button{
-    float: right;
+button {
+  float: right;
 }
-
-
 
 /* hamburger toggle button*/
 .hamburger {
-    padding: 15px 15px;
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible; }
-    .hamburger:hover {
-        border: 3px solid white;
-        border-radius: 3.5px;
-      opacity: 0.7; }
-    .hamburger.is-active:hover {
-      opacity: 0.7; }
-    .hamburger.is-active .hamburger-inner,
-    .hamburger.is-active .hamburger-inner::before,
-    .hamburger.is-active .hamburger-inner::after {
-      background-color: white; }
-  
-  .hamburger-box {
-    width: 40px;
-    height: 24px;
-    display: inline-block;
-    position: relative; }
-    .hamburger-inner:hover{
-        background-color: white;
-    }
-   
-  .hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px; }
-    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-      width: 40px;
-      height: 4px;
-      background-color: white;
-      border-radius: 4px;
-      position: absolute;
-      transition-property: transform;
-      transition-duration: 0.15s;
-      transition-timing-function: ease; }
-    .hamburger-inner::before, .hamburger-inner::after {
-      content: "";
-      display: block; }
-    .hamburger-inner::before {
-      top: -10px; }
-    .hamburger-inner::after {
-      bottom: -10px; }
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  border: 3px solid white;
+  border-radius: 3.5px;
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger-inner:hover {
+  background-color: white;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
 /*
    * Elastic
    */
-   .hamburger--elastic .hamburger-inner {
-    top: 2px;
-    transition-duration: 0.275s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-    .hamburger--elastic .hamburger-inner::before {
-      top: 10px;
-      transition: opacity 0.125s 0.275s ease; }
-    .hamburger--elastic .hamburger-inner::after {
-      top: 20px;
-      transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  
-  .hamburger--elastic.is-active .hamburger-inner {
-    transform: translate3d(0, 10px, 0) rotate(135deg);
-    transition-delay: 0.075s; }
-    .hamburger--elastic.is-active .hamburger-inner::before {
-      transition-delay: 0s;
-      opacity: 0; }
-    .hamburger--elastic.is-active .hamburger-inner::after {
-      transform: translate3d(0, -20px, 0) rotate(-270deg);
-      transition-delay: 0.075s; }
-  
-  /*
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
+}
+.hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+.hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
+}
+
+/*
      * Elastic Reverse
      */
-  .hamburger--elastic-r .hamburger-inner {
-    top: 2px;
-    transition-duration: 0.275s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-    .hamburger--elastic-r .hamburger-inner::before {
-      top: 10px;
-      transition: opacity 0.125s 0.275s ease; }
-    .hamburger--elastic-r .hamburger-inner::after {
-      top: 20px;
-      transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  
-  .hamburger--elastic-r.is-active .hamburger-inner {
-    transform: translate3d(0, 10px, 0) rotate(-135deg);
-    transition-delay: 0.075s; }
-    .hamburger--elastic-r.is-active .hamburger-inner::before {
-      transition-delay: 0s;
-      opacity: 0; }
-    .hamburger--elastic-r.is-active .hamburger-inner::after {
-      transform: translate3d(0, -20px, 0) rotate(270deg);
-      transition-delay: 0.075s; }
+.hamburger--elastic-r .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hamburger--elastic-r .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+.hamburger--elastic-r .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.hamburger--elastic-r.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(-135deg);
+  transition-delay: 0.075s;
+}
+.hamburger--elastic-r.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+.hamburger--elastic-r.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(270deg);
+  transition-delay: 0.075s;
+}
 
 /* #### Contact Form ###### */
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 1px;
-    margin-bottom: 10px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #5b6862;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #94aaa1;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  #emailAdd{
-      color: #5b6862
-  }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #5b6862;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #94aaa1;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+#emailAdd {
+  color: #5b6862;
+}
 
 /* input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
@@ -410,235 +438,223 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 } */
-    
+
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait){
-   
-        
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  body {
+    box-sizing: border-box;
+    height: auto;
 
-    body {
-        box-sizing: border-box;
-        height: auto;
-
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;    
-    }
-}
-  /* #### Mobile Phones Landscape #### */
-  @media screen and (max-device-width: 640px) and (orientation: landscape){
-    body {
-        box-sizing: border-box;
-        height: auto;
-
-        background-repeat: no-repeat;
-
-        background-size: cover;
-        background-attachment: fixed; 
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
-  /* #### Mobile Phones Portrait or Landscape #### */
-  @media screen and (max-device-width: 640px){
-    body {
-        box-sizing: border-box;
-        background-repeat: no-repeat;
-        height: 700px;
+}
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  body {
+    box-sizing: border-box;
+    height: auto;
 
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
   }
-  /* #### iPhone 4+ Portrait or Landscape #### */
-  @media screen and (min-device-width: 850px){
-    body {
-        box-sizing: border-box;
-        height: 500px;
+}
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) {
+  body {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    height: 700px;
 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;  
-    }
-    h1{
-        text-align: center;
-    }
-    .navbar{
-        width: 100%;
-        }
-        #name{
-            width: 300px;
-            margin: auto;
-        }
-        #email{
-            width: 300px;
-            margin: auto;
-        }
-        #message{
-            width: 300px;
-            margin: auto;
-            
-        }
-        #submit{
-            width: 300px;
-            margin: auto;
-        }
-        #contactHead{
-            text-align: left;
-        }
-        .contactBut{
-            position: absolute;
-            top: 10px;
-            right: 100px;
-        }
+    background-size: cover;
+    background-attachment: fixed;
   }
-  /* #### Mobile Phones Landscape #### */
-  @media screen and (max-device-width: 640px) and (orientation: landscape){
-    body {
-        box-sizing: border-box;
-        height: 500px;
+}
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 850px) {
+  body {
+    box-sizing: border-box;
+    height: 500px;
 
-        background-repeat: no-repeat;
-
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
-  /* #### iPhone 5SE Portrait or Landscape #### */
-  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-    body {
-        box-sizing: border-box;
-        height: 550px;
-
-        background-repeat: no-repeat;
-
-        background-size: cover;
-        background-attachment: fixed;
-        
-    }
-    .navbar{
-        width: 100%;
-        }
-        #name{
-            width: 300px;
-            margin: auto;
-        }
-        #email{
-            width: 300px;
-            margin: auto;
-        }
-        #message{
-            width: 300px;
-            margin: auto;
-            
-        }
-        #submit{
-            width: 300px;
-            margin: auto;
-        }
-        #contactHead{
-            text-align: center;
-        }
-        .contactBut{
-            position: absolute;
-            top: 10px;
-            right: 100px;
-        }
-  }
-  /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
-  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
-    body {
-        box-sizing: border-box;
-        height: 660px;
-
-        background-repeat: no-repeat;
-
-        background-size: cover;
-    
-    }
-    .navbar{
-        width: 100%;
-        position: fixed;
-        }
-        #name{
-            width: 300px;
-            margin: auto;
-        }
-        #email{
-            width: 300px;
-            margin: auto;
-        }
-        #message{
-            width: 300px;
-            margin: auto;
-            
-        }
-        #submit{
-            width: 300px;
-            margin: auto;
-        }
-        #contactHead{
-            text-align: center;
-        }
-        .contactBut{
-            position: absolute;
-            top: 10px;
-            right: 100px;
-        }
-} 
-  /* #### Tablets Portrait or Landscape #### */
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-    body {
-        box-sizing: border-box;
-        height: auto;
-
-        background-repeat: no-repeat;
-
-        background-size: cover;
-        height: 1300px;
-    
-    }
-}
-
-  /* #### iPhone 4 Portrait or Landscape #### */
-  @media (device-height: 480px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){   
-body{
-    width: 320px;
-    overflow: auto;
-}
-.navbar{
-width: 100%;
-}
-#name{
-    width: 300px;
-    margin: auto;
-}
-#email{
-    width: 300px;
-    margin: auto;
-}
-#message{
-    width: 300px;
-    margin: auto;
-    
-}
-#submit{
-    width: 300px;
-    margin: auto;
-}
-#contactHead{
+  h1 {
     text-align: center;
-}
-.contactBut{
+  }
+  .navbar {
+    width: 100%;
+  }
+  #name {
+    width: 300px;
+    margin: auto;
+  }
+  #email {
+    width: 300px;
+    margin: auto;
+  }
+  #message {
+    width: 300px;
+    margin: auto;
+  }
+  #submit {
+    width: 300px;
+    margin: auto;
+  }
+  #contactHead {
+    text-align: left;
+  }
+  .contactBut {
     position: absolute;
     top: 10px;
     right: 100px;
-}
   }
+}
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  body {
+    box-sizing: border-box;
+    height: 500px;
 
+    background-repeat: no-repeat;
 
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+/* #### iPhone 5SE Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    box-sizing: border-box;
+    height: 550px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .navbar {
+    width: 100%;
+  }
+  #name {
+    width: 300px;
+    margin: auto;
+  }
+  #email {
+    width: 300px;
+    margin: auto;
+  }
+  #message {
+    width: 300px;
+    margin: auto;
+  }
+  #submit {
+    width: 300px;
+    margin: auto;
+  }
+  #contactHead {
+    text-align: center;
+  }
+  .contactBut {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+  }
+}
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    box-sizing: border-box;
+    height: 660px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+  }
+  .navbar {
+    width: 100%;
+    position: fixed;
+  }
+  #name {
+    width: 300px;
+    margin: auto;
+  }
+  #email {
+    width: 300px;
+    margin: auto;
+  }
+  #message {
+    width: 300px;
+    margin: auto;
+  }
+  #submit {
+    width: 300px;
+    margin: auto;
+  }
+  #contactHead {
+    text-align: center;
+  }
+  .contactBut {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+  }
+}
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    box-sizing: border-box;
+    height: auto;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    height: 1300px;
+  }
+}
+
+/* #### iPhone 4 Portrait or Landscape #### */
+@media (device-height: 480px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    width: 320px;
+    overflow: auto;
+  }
+  .navbar {
+    width: 100%;
+  }
+  #name {
+    width: 300px;
+    margin: auto;
+  }
+  #email {
+    width: 300px;
+    margin: auto;
+  }
+  #message {
+    width: 300px;
+    margin: auto;
+  }
+  #submit {
+    width: 300px;
+    margin: auto;
+  }
+  #contactHead {
+    text-align: center;
+  }
+  .contactBut {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+  }
+}
 
 /* #### iPad mini Portrait or Landscape #### */
-@media (device-height: 1024px) and (device-width: 768px) and (-webkit-min-device-pixel-ratio: 2){   
-    body {
+@media (device-height: 1024px) and (device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
     box-sizing: border-box;
     height: auto;
 
@@ -646,9 +662,9 @@ width: 100%;
 
     background-size: cover;
     height: 1024px;
-    }
+  }
 }
 
-#projectWrap{
-overflow: visible;
+#projectWrap {
+  overflow: visible;
 }
