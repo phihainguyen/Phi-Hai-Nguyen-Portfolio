@@ -9,7 +9,11 @@ body {
   opacity: 1;
   transition: 2.7s opacity;
 }
-
+.icon:hover {
+  opacity: 0.2;
+  border: 3px solid #ffffff;
+  border-radius: 11px;
+}
 body.fade {
   opacity: 0;
   transition: none;
@@ -26,7 +30,10 @@ html {
 #projectWrap {
   overflow: visible;
 }
-
+.wrap {
+  display: flex;
+  justify-content: space-around;
+}
 #macBack {
   /* The image used */
   /* Add the blur effect */
