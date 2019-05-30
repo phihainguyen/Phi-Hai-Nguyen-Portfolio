@@ -4,7 +4,7 @@ body {
   align-content: center;
   text-align: center;
   font-family: "Dosis", sans-serif;
-  /* overflow: hidden; */
+  overflow: hidden;
 
   opacity: 1;
   transition: 2.7s opacity;
@@ -12,6 +12,14 @@ body {
 .icon:hover {
   opacity: 0.2;
   border: 3px solid #ffffff;
+  border-radius: 11px;
+}
+.profile-git {
+  float: right;
+}
+.profile-git:hover {
+  opacity: 0.2;
+  border: 2px solid #ffffff;
   border-radius: 11px;
 }
 body.fade {
@@ -29,6 +37,13 @@ html {
 }
 #projectWrap {
   overflow: visible;
+  position: relative;
+  height: 500px;
+  overflow: auto;
+}
+.container {
+  max-height: 100%;
+  overflow: auto;
 }
 .wrap {
   display: flex;
