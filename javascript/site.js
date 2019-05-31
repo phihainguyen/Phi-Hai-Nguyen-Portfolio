@@ -15,14 +15,15 @@ let k = 0;
 const txt = "Hello!";
 const intro = "I am Phi Hai Nguyen"; /* The text */
 const descript = "And I am a Web Developer";
-var speed = 80; /* The speed/duration of the effect in milliseconds */
+const speed = 80; /* The speed/duration of the effect in milliseconds */
+const speed3 = 300;
 const speed2 = 60;
 
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("greet").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriter, speed3);
   }
   if (i === txt.length - 1) {
     setTimeout(function() {
