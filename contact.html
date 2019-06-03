@@ -107,49 +107,97 @@
         </button>
       </nav>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 id="contactHead">CONTACT PHI HAI AT</h1>
-          <br />
-          <p>
-            EMAIL:
-            <a
-              id="emailAdd"
-              href="mailto:phihai93@gmail.com?subject=subject&body=Hello Phi-Hai,"
-              >phihai93@gmail.com</a
+
+    <div id="contactWrap">
+      <h1 id="contactHead">CONTACT PHI HAI AT</h1>
+      <div class="container contact">
+        <div
+          class="row contact-row"
+          style="background-color:  black;width: 90%; border-radius: 50px"
+        >
+          <div class="col-sm-1.5 brace">{</div>
+          <div class="col-sm-9 contact-info">
+            <br />
+            <p>
+              <a
+                id="emailAdd"
+                href="mailto:phihai93@gmail.com?subject=subject&body=Hello Phi-Hai,"
+                class="contact-font"
+                ><img
+                  src="./icon/iconfinder_038_028_share_link_friends_send_android_material_3171669.png"
+                  alt="email icons"
+                  height="30px"
+                  width="30px"
+                />
+                phihai93@gmail.com</a
+              >
+            </p>
+            <p class="contact-font" id="phone">
+              <img
+                src="./icon/iconfinder_Whatsapp-line-transparent_2061683.png"
+                alt="phone icon"
+                height="30px"
+                width="30px"
+              />
+              425-319-7872
+            </p>
+            <p class="contact-font" id="address">
+              <img
+                src="./icon/iconfinder_Periscope-line-transparent_2061698.png"
+                alt="periscope icon for location"
+                height="30px"
+                width="25px"
+              />
+              SEATTLE, WA 98146
+            </p>
+            <p class="contact-font">
+              <img
+                src="./icon/iconfinder_LinkedIn-line-transparent_2061702.png"
+                alt="LinkedIn icon"
+                height="30px"
+                width="30px"
+              />
+              <a
+                href="https://www.linkedin.com/in/phi-hai-nguyen/"
+                id="linkedIn"
+                >LinkedIn.com/in/Phi-Hai-Nguyen/</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-1.5 brace">}</div>
+        </div>
+      </div>
+      <!-- <div class="container contact">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Contact Form</h3>
+
+            <form
+              action="mailto:phihai93@gmail.com"
+              id="form"
+              class="topBefore"
             >
-          </p>
-          <p>PHONE NUMBER: 425-319-7872</p>
-          <p>ADDRESS: SEATTLE, WA 98146</p>
+              <input
+                type="text"
+                id="fname"
+                name="subject"
+                placeholder="Your name.."
+              />
+
+              <textarea
+                id="subject"
+                name="body"
+                placeholder="Write something.."
+                style="height:150px"
+              ></textarea>
+
+              <input id="submit" type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h3>Contact Form</h3>
 
-          <form action="mailto:phihai93@gmail.com" id="form" class="topBefore">
-            <input
-              type="text"
-              id="fname"
-              name="subject"
-              placeholder="Your name.."
-            />
-
-            <textarea
-              id="subject"
-              name="body"
-              placeholder="Write something.."
-              style="height:150px"
-            ></textarea>
-
-            <input id="submit" type="submit" value="Submit" />
-          </form>
-        </div>
-      </div>
-    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

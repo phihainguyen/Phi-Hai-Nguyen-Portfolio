@@ -149,6 +149,59 @@ button {
   overflow: auto;
   display: flex;
 }
+#contactWrap {
+  overflow: auto;
+
+  justify-content: center;
+
+  height: 80vh;
+}
+div.container.contact {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background: none;
+  width: 80vw;
+}
+.contact {
+  overflow: hidden;
+}
+.contact-font {
+  font-size: 30px;
+  color: #ff739f;
+  margin-left: 40px;
+}
+#phone {
+  color: #974d9f;
+}
+#address {
+  color: #de5425;
+}
+#emailAdd {
+  color: #ff739f;
+}
+#linkedIn {
+  color: #c31f4c;
+}
+.brace {
+  color: yellow;
+  font-size: 600px;
+}
+div.col-sm-8.contact-info {
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  margin: auto;
+}
+div.row.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brace {
+  font-size: 300px;
+}
 .row {
   display: flex;
   justify-content: space-around;
@@ -385,9 +438,6 @@ input[type="submit"]:hover {
   background-color: #f2f2f2;
   padding: 10px;
 }
-#emailAdd {
-  color: #5b6862;
-}
 
 /* input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
@@ -562,6 +612,31 @@ textarea:hover {
     background-size: cover;
     background-attachment: fixed;
   }
+  .brace {
+    display: none;
+  }
+  #contactWrap {
+    overflow: auto;
+
+    justify-content: center;
+    height: 100vh;
+  }
+  div.container.contact {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background: none;
+    width: 100vw;
+    margin-top: 80px;
+  }
+  #contactHead {
+    margin-top: 90px;
+  }
+  .contact-font {
+    font-size: 15px;
+    color: #ff739f;
+    margin-left: 40px;
+  }
 }
 /* #### Mobile Phones Landscape #### */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
@@ -619,12 +694,32 @@ textarea:hover {
     margin: auto;
   }
   #contactHead {
-    text-align: left;
+    margin: auto;
   }
   .contactBut {
     position: absolute;
     top: 10px;
     right: 100px;
+  }
+  #contactWrap {
+    overflow: auto;
+
+    justify-content: center;
+
+    height: 80vh;
+  }
+  div.container.contact {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background: none;
+    width: 140vw;
+  }
+
+  .contact-font {
+    font-size: 20px;
+    color: #ff739f;
+    margin-left: 40px;
   }
 }
 /* #### Mobile Phones Landscape #### */
