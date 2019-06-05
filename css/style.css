@@ -716,13 +716,7 @@ textarea:hover {
     background: none;
     width: 140vw;
   }
-  div.row.contact-row {
-    height: 140vh;
-    background: yellow;
-  }
-  /* div.col-sm-5.contact-info {
-    font-size: 10px;
-  } */
+
   .contact-font {
     font-size: 20px;
     color: #ff739f;
